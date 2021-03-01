@@ -34,19 +34,26 @@ public class Cuchillo1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Cuchillo.transform.position.y > -2.0f && contador < 50 )
+        if(Cuchillo.transform.position.y > -2.0f && contador < 45 )
         {
             ObjetoAmover.transform.position = Vector3.MoveTowards(ObjetoAmover.transform.position, MoverHacia, VelocidadAmover*Time.deltaTime);
             contador++;
 
         }
-        print(cuchillo1.transform.position.y);
-        if(cuchillo1.transform.position.y == -2.51f)
+        
+        if(cuchillo1.transform.position.y == -3.66f)
         {
             Destroy(BorrarEnd);
             Destroy(BorrarStart);
 
             if (Input.GetKeyDown(KeyCode.Space))
+            {
+
+                cuchillo1.AddForce(fuerzaCuchi);
+                print("apretaste espacio");
+
+            }
+            if (Input.touchCount == 1)
             {
 
                 cuchillo1.AddForce(fuerzaCuchi);

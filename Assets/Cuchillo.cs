@@ -31,6 +31,13 @@ public class Cuchillo : MonoBehaviour
             cuchillo.AddForce(fuerzaCuchi);
             
         }
+
+        if (Input.touchCount == 1)
+        {
+           
+            cuchillo.AddForce(fuerzaCuchi);
+            
+        }
         
     }
 
