@@ -11,6 +11,7 @@ public class Cuchillo : MonoBehaviour
     public float Velocidad;
     private Vector3 MoverHacia;   
     private Vector2 fuerzaCuchi;
+    public BoxCollider2D cuchi;
     
 
     // Start is called before the first frame update
@@ -23,21 +24,20 @@ public class Cuchillo : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+
+    private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            
-            cuchillo.AddForce(fuerzaCuchi);
-            
-        }
 
-        if (Input.touchCount == 1)
-        {
-           
             cuchillo.AddForce(fuerzaCuchi);
-            
+
         }
+    }
+    private void FixedUpdate()
+    {
+        
+        
         
     }
 
@@ -48,7 +48,9 @@ public class Cuchillo : MonoBehaviour
         {
             Hijo.SetParent(Padre);
             cuchillo.isKinematic = true;
-            print("COLISIONO CON TRONCO");
+            cuchi.isTrigger = true;
+            
+           
         }
         
 

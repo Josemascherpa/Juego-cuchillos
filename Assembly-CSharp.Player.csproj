@@ -657,6 +657,7 @@
   <ItemGroup>
     <Compile Include="Assets\Cuchillo.cs" />
     <Compile Include="Assets\Cuchillo1.cs" />
+    <Compile Include="Assets\Cuchillo2.cs" />
     <Compile Include="Assets\Tronco.cs" />
     <Compile Include="Assets\Tronco1.cs" />
   </ItemGroup>

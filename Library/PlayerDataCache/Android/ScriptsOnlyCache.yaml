@@ -45,6 +45,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 61
       Script: {instanceID: 0}
+    - Class: 62
+      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 104
@@ -172,7 +174,7 @@ ScriptsOnlyBuild:
     className: TMP_InputField
   - hash:
       serializedVersion: 2
-      Hash: 56aad9988997592ff5f28a2080a6a01e
+      Hash: 32cb6cd5bf791a56c6a8d54cf49149bc
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Cuchillo
@@ -274,7 +276,7 @@ ScriptsOnlyBuild:
     className: Shadow
   - hash:
       serializedVersion: 2
-      Hash: d5cf8741eddb2571af517377f1d8207c
+      Hash: 4064e3ed1872c5dc2090f0417923bf89
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Cuchillo1
@@ -581,4 +583,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/nacho/OneDrive/Escritorio/apk/apk.apk
+  playerPath: C:/Users/nacho/OneDrive/Escritorio/asd/asd.apk

@@ -22,7 +22,7 @@ public class Tronco : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void Update()
+    private void FixedUpdate()
     {
         //Luego de 5 segundos invoca la funcion GIRO FALSE
         contador++;
