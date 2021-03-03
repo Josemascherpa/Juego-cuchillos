@@ -9,6 +9,8 @@ public class Cuchillo2 : MonoBehaviour
     public GameObject ObjetoAmover;
     public Transform StartPoint;
     public Transform EndPoint;
+    public GameObject eliminarStart;
+    public GameObject eliminarEnd;
     public float VelocidadAmover;
     private Vector2 fuerzaCuchi;
     private float Velocidad = 30000;    
@@ -17,8 +19,9 @@ public class Cuchillo2 : MonoBehaviour
     public Transform Hijo;
     private Vector3 MoverHacia;
     bool tirarSpace = false;
-    public BoxCollider2D cuchi2;
-    public GameObject destruirCuchi;    
+    public PolygonCollider2D cuchi2;
+    public GameObject destruirCuchi;
+    bool colTrasera = false;
 
     // Start is called before the first frame update
     void Start()
@@ -52,13 +55,13 @@ public class Cuchillo2 : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (Cuchillo1.transform.position.y > -2.0f && contador < 20)
+        if (Cuchillo1.transform.position.y > -2.0f && contador < 20 && colTrasera == false)
         {
             ObjetoAmover.transform.position = Vector3.MoveTowards(ObjetoAmover.transform.position, MoverHacia, VelocidadAmover * Time.deltaTime);
             contador++;
 
         }
-        print(contador);
+        
     }
 
     private void OnCollisionEnter2D(Collision2D col)
@@ -67,27 +70,45 @@ public class Cuchillo2 : MonoBehaviour
         {
             Hijo.SetParent(Padre);
             cuchillo2.isKinematic = true;
-            cuchi2.isTrigger = true;
-            
+            cuchi2.isTrigger = true;          
 
         }
-        
-        
-        
+        if ((col.gameObject.tag == "traseracuchi1" && cuchillo2.transform.position.y < -0.200) || (col.gameObject.tag == "traseracuchi1" && cuchillo2.transform.position.y > 5.5))
+        {
+            
+            colTrasera = true;
+            print("solo con la trasera cuchi2");
+        }
+        if (colTrasera == true)
+        {
+
+            Invoke("destruirCuchillo", 3f);
+
+            colTrasera = false;
+        }
+
+       
+
     }
 
     private void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.tag == "tirar")
         {
+            Destroy(eliminarStart);
+            Destroy(eliminarEnd);
             tirarSpace = true;
+
+        }
+        if (col.gameObject.tag == "fuerademapa")
+        {
+            Invoke("destruirCuchillo", 3f);
         }
     }
     
-    void destruircuchillo()
+    void destruirCuchillo()
     {
         Destroy(gameObject);
     }
 
-    //SI CUCHILLO COLISIONA CON LA PARTE DE ATRAS BORRAR CON UN INVOKE(destuircuchillo,5f)
 }

@@ -31,6 +31,7 @@ public class Cuchillo : MonoBehaviour
         {
 
             cuchillo.AddForce(fuerzaCuchi);
+            
 
         }
     }
@@ -54,5 +55,14 @@ public class Cuchillo : MonoBehaviour
         }
         
 
+    }
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        
+        if (col.gameObject.tag == "fuerademapa")
+        {
+            print("sali del mapa");
+            Destroy(gameObject);
+        }
     }
 }

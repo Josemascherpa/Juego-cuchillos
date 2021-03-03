@@ -7,6 +7,9 @@ TagManager:
   - cuchi
   - tronc
   - tirar
+  - trasera
+  - traseracuchi1
+  - fuerademapa
   layers:
   - Default
   - TransparentFX

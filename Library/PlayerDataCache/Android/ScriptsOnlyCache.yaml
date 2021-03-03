@@ -3,6 +3,7 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - Cuchillo
     - Cuchillo1
+    - Cuchillo2
     - Tronco
     - Tronco1
     Unity.2D.Animation.Editor.dll:
@@ -43,9 +44,11 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 58
       Script: {instanceID: 0}
+    - Class: 60
+      Script: {instanceID: 0}
     - Class: 61
       Script: {instanceID: 0}
-    - Class: 62
+    - Class: 68
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
@@ -58,7 +61,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12106}
     - Class: 114
-      Script: {instanceID: 14316}
+      Script: {instanceID: 12238}
+    - Class: 114
+      Script: {instanceID: 14318}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -276,7 +281,7 @@ ScriptsOnlyBuild:
     className: Shadow
   - hash:
       serializedVersion: 2
-      Hash: 4064e3ed1872c5dc2090f0417923bf89
+      Hash: 89d8149d85eb4a7faca37b3c893989f7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Cuchillo1
@@ -310,6 +315,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SpriteAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 96c00c5a6ee788c4cd61661827f3d58f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Cuchillo2
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
