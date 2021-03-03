@@ -47,6 +47,10 @@ public class Cuchillo2 : MonoBehaviour
                 tirarSpace = false;
                 
 
+            } else if (Input.touches.Length == 1)
+            {
+                cuchillo2.AddForce(fuerzaCuchi);
+                tirarSpace = false;
             }
 
         }

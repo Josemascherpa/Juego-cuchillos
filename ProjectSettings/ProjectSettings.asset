@@ -168,7 +168,7 @@ PlayerSettings:
     Android: com.JuegoCuchsadfi.JuegoCelusdf
   buildNumber: {}
   AndroidBundleVersionCode: 1
-  AndroidMinSdkVersion: 25
+  AndroidMinSdkVersion: 28
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 1
   aotOptions: 

@@ -1037,7 +1037,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.048813112, y: 0.674019}
+  m_Offset: {x: -0.048813112, y: 0.6575624}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1048,7 +1048,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.052912876, y: 0.09564471}
+  m_Size: {x: 0.052912876, y: 0.12855792}
   m_EdgeRadius: 0
 --- !u!114 &809095858
 MonoBehaviour:
@@ -1101,7 +1101,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.029529694, y: -0.07089305}
+  m_Offset: {x: -0.029529694, y: -0.21195054}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1112,7 +1112,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.08443301, y: 1.3188782}
+  m_Size: {x: 0.08443301, y: 1.0367632}
   m_EdgeRadius: 0
 --- !u!1 &1227171913
 GameObject:
@@ -1335,8 +1335,8 @@ MonoBehaviour:
   StartPoint: {fileID: 316728474}
   EndPoint: {fileID: 346780883}
   VelocidadAmover: 20
-  eliminarStart: {fileID: 0}
-  eliminarEnd: {fileID: 0}
+  eliminarStart: {fileID: 316728473}
+  eliminarEnd: {fileID: 346780882}
   Padre: {fileID: 189493286}
   Hijo: {fileID: 1549559553}
   cuchi1: {fileID: 1549559549}
@@ -1421,7 +1421,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 1
-  m_Offset: {x: -0.02586028, y: -0.08315563}
+  m_Offset: {x: -0.02586028, y: -0.25242448}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1432,7 +1432,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.107183516, y: 1.2405281}
+  m_Size: {x: 0.107183516, y: 0.9019904}
   m_EdgeRadius: 0
 --- !u!1 &1832601289
 GameObject:
@@ -1468,7 +1468,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 1
-  m_Offset: {x: -0.02262742, y: -0.06608009}
+  m_Offset: {x: -0.02262742, y: -0.2400508}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1479,7 +1479,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.10898812, y: 1.206377}
+  m_Size: {x: 0.10898812, y: 0.85843563}
   m_EdgeRadius: 0
 --- !u!114 &1832601291
 MonoBehaviour:
@@ -1497,8 +1497,8 @@ MonoBehaviour:
   ObjetoAmover: {fileID: 1832601289}
   StartPoint: {fileID: 267900145}
   EndPoint: {fileID: 1873771023}
-  eliminarStart: {fileID: 0}
-  eliminarEnd: {fileID: 0}
+  eliminarStart: {fileID: 267900144}
+  eliminarEnd: {fileID: 1873771022}
   VelocidadAmover: 20
   Padre: {fileID: 189493286}
   Hijo: {fileID: 1832601295}

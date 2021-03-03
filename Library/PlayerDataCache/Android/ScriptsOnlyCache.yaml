@@ -281,7 +281,7 @@ ScriptsOnlyBuild:
     className: Shadow
   - hash:
       serializedVersion: 2
-      Hash: 89d8149d85eb4a7faca37b3c893989f7
+      Hash: 58c14bbe4931bdddf2660f964d6ae8ac
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Cuchillo1
@@ -317,7 +317,7 @@ ScriptsOnlyBuild:
     className: TMP_SpriteAsset
   - hash:
       serializedVersion: 2
-      Hash: 96c00c5a6ee788c4cd61661827f3d58f
+      Hash: 3c75b021541dcd45a6b5e828ea573f64
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Cuchillo2

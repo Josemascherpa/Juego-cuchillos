@@ -33,6 +33,9 @@ public class Cuchillo : MonoBehaviour
             cuchillo.AddForce(fuerzaCuchi);
             
 
+        }else if(Input.touches.Length == 1)
+        {
+            cuchillo.AddForce(fuerzaCuchi);
         }
     }
     private void FixedUpdate()
